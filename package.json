@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "sweetalert2": "^11.4.23",
+    "swiper": "^8.3.1"
+  },
+  "name": "suitmedia-submission",
+  "version": "1.0.0",
+  "description": "Submission Untuk Suitmedia",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Achmad Fauzi Ilham",
+  "license": "ISC"
+}

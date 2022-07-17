@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+nav {
+  background: #fff;
+  padding: 0 3rem;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  height: 4rem;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+nav .logo a {
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: black;
+  opacity: 0.75;
+  transition: 300ms ease-in-out;
+}
+nav .logo a:hover,
+nav .logo a:focus {
+  opacity: 1;
+  transition: 300ms ease-in-out;
+}
+nav .nav_list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 0 2rem;
+}
+nav .nav_list li {
+  position: relative;
+  list-style: none;
+  padding: 1.5rem 1rem;
+}
+nav .nav_list li a {
+  color: black;
+}
+nav .nav_list li .item_drop {
+  position: absolute;
+  top: 4.3rem;
+  left: -0.5rem;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  width: 12rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: 300ms ease-in-out;
+  z-index: 10;
+}
+nav .nav_list li .item_drop a {
+  color: black;
+  padding: 1rem;
+}
+nav .nav_list .about:hover {
+  background-color: rgba(39, 39, 39, 0.1);
+}
+nav .nav_list .about:hover .item_drop {
+  opacity: 1;
+  transition: 300ms ease-in-out;
+  visibility: visible;
+}
+nav .nav_list .about:hover .item_drop a:hover {
+  background-color: rgb(49, 49, 49);
+  color: white;
+}
+
+.carousel .carousel_desc {
+  position: absolute;
+  bottom: 4rem;
+  left: 10rem;
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.473);
+  padding: 2rem;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.carousel .swiper {
+  width: 100%;
+  height: 100vh;
+}
+.carousel .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: rgba(0, 0, 0, 0.1);
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.carousel .swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+.carousel .swiper-button-next,
+.carousel .swiper-button-prev {
+  color: white;
+}
+.carousel .swiper-pagination-bullet-active {
+  background-color: rgb(255, 255, 255) !important;
+}
+
+.values {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.values h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.values .value_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.values .value_container div:nth-child(1) {
+  background: #da7c7c;
+}
+.values .value_container div:nth-child(2) {
+  background: #6c946e;
+}
+.values .value_container div:nth-child(3) {
+  background: #4b82b6;
+}
+.values .value_container .value_item {
+  background-color: #6ed9df;
+  color: white;
+  width: 30rem;
+  max-height: 30rem;
+  padding: 3rem 5rem 5rem 5rem;
+  margin: 2rem 3rem;
+}
+.values .value_container .value_item .value_headeritem {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  height: 50vh;
+}
+.contact form {
+  max-width: 40rem;
+  width: 75%;
+}
+.contact form h2 {
+  text-align: center;
+}
+.contact form .form_container {
+  display: flex;
+  flex-direction: column;
+}
+.contact form .form_container input,
+.contact form .form_container textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  outline: none;
+  resize: none;
+  border: none;
+  border-bottom: 1px solid rgb(187, 187, 187);
+}
+.contact form .form_container input[type=text]:focus,
+.contact form .form_container textarea:focus {
+  border-bottom: 1px solid rgb(58, 102, 223);
+}
+.contact form .form_container textarea::-webkit-scrollbar {
+  width: 4px;
+}
+.contact form .form_container textarea::-webkit-scrollbar-thumb {
+  background: #2a5dca;
+  border-radius: 4px;
+}
+.contact form .form_container .submit {
+  text-align: center;
+}
+.contact form .form_container input[type=submit] {
+  margin-top: 2rem;
+  background-color: #2a5dca;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.contact form .form_container .error {
+  color: #ca2a45;
+}
+.contact form .form_container .error-border {
+  border-bottom: 1px solid #ca2a45;
+}
+.contact form #success {
+  color: #3fb144;
+}
+
+footer {
+  color: rgb(255, 255, 255);
+  background-color: #1a1a1a;
+  width: 100%;
+  height: 10vh;
+}
+footer .footer_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 10vh;
+}
+footer .footer_container p {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 0.7rem;
+}
+footer .footer_container .sosmed {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}/*# sourceMappingURL=style.css.map */

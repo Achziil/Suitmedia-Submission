@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;800&display=swap" rel="stylesheet" />
+    <!-- StyleCSS -->
+    <link rel="stylesheet" href="/styles/style.css" />
+    <!-- Swiper Style -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <title>Front-End Starter Kit</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/PT.Kreasi_online_indonesia_logo.ico">
+  </head>
+  <body>
+    <main>
+      <header>
+        <nav class="nav">
+          <div class="logo"><a href="#" rel="noopener noreferrer">Company</a></div>
+          <ul class="nav_list">
+            <li class="list_item about">
+              <a rel="noopener noreferrer" href="#about">About</a>
+              <div class="item_drop">
+                <a rel="noopener noreferrer" href="#">History</a>
+                <a rel="noopener noreferrer" href="#">Vision Mission</a>
+              </div>
+            </li>
+            <li class="list_item"><a rel="noopener noreferrer" href="#">Our Work</a></li>
+            <li class="list_item"><a rel="noopener noreferrer" href="#">Our Team</a></li>
+            <li class="list_item"><a rel="noopener noreferrer" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section class="carousel" id="about">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <p class="carousel_desc">This is A Place Where Technology & Creativity Fused Into Digital Chemistry</p>
+              <img src="/assets/images/bg.jpg" alt="About Background">
+            </div>
+            <div class="swiper-slide">
+              <p class="carousel_desc">We don't have but we have the greatest team</p>
+              <img src="/assets/images/about-bg.jpg" alt="About Background">
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+        </div>
+      </section>
+      <section class="values">
+        <h2>OUR VALUES</h2>
+        <div class="value_container">
+          <div class="value_item">
+            <img src="/assets/images/lightbulb-o.png" alt="" />
+            <h3 class="value_headeritem">Innovative</h3>
+            <p class="description_item">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla natus hic fugiat quam pariatur? Quod sint nostrum, repudiandae molestiae quasi esse! Quidem quis earum sequi porro quam
+              magnam. Tempore, adipisci.
+            </p>
+            <div class="arrow-right"></div>
+          </div>
+          <div class="value_item">
+            <img src="/assets/images/bank.png" alt="" />
+            <h3 class="value_headeritem">Loyalty</h3>
+            <p class="description_item">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla natus hic fugiat quam pariatur? Quod sint nostrum, repudiandae molestiae quasi esse! Quidem quis earum sequi porro quam
+              magnam. Tempore, adipisci.
+            </p>
+          </div>
+          <div class="value_item">
+            <img src="/assets/images/balance-scale.png" alt="" />
+            <h3 class="value_headeritem">Respect</h3>
+            <p class="description_item">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla natus hic fugiat quam pariatur? Quod sint nostrum, repudiandae molestiae quasi esse! Quidem quis earum sequi porro quam
+              magnam. Tempore, adipisci.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <form onkeyup="event.preventDefault(); validateForm()" onsubmit="event.preventDefault(); validateForm()">
+          <h2 class="contact_header">CONTACT US</h2>
+          <div class="form_container">
+            <label for="name">Name : </label>
+            <input type="text" id="name" placeholder="Your Name">
+            <small class="error"></small>
+            <label for="email">Email : </label>
+            <input type="text" id="email"placeholder="Your Name">
+            <small class="error"></small>
+            <label for="message">Message : </label>
+            <textarea name="message" id="message" rows="6" placeholder="Your Message"></textarea>
+            <small class="error"></small>
+            <!-- button -->
+            <div class="submit">
+              <input type="submit" value="Submit">
+              <p id="success"></p>
+            </div>
+          </div>
+        </form>
+      </section>
+      <footer>
+        <div class="footer_container">
+          <p> Copyright &copy; 2022. PT Company</p>
+          <div class="sosmed">
+            <a href="https://web.facebook.com/" target="_blank" rel="noopener noreferrer">
+              <img width="22px" height="22px" src="/assets/images/facebook-official.png" alt="facebook">
+            </a>
+            <a href="https://twitter.com/home" target="_blank" rel="noopener noreferrer">
+              <img width="22px" height="22px" src="/assets/images/twitter.png" alt="twitter">
+            </a>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
